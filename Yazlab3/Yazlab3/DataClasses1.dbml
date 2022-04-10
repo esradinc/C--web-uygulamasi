@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="yazlab" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-4SSIBJ2;Initial Catalog=yazlab;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="yazlabConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.pdflertablosu2" Member="pdflertablosu2">
+    <Type Name="pdflertablosu2">
+      <Column Name="pdfid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dosyaadi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dosyakonumu" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="kullaniciid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.kullanicilartablosu" Member="kullanicilartablosu">
+    <Type Name="kullanicilartablosu">
+      <Column Name="kullaniciid" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="kullaniciadi" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="sifre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.pdflertablosu" Member="pdflertablosu">
+    <Type Name="pdflertablosu">
+      <Column Name="pdfid" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="dosyaadi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dosyakonumu" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="kullaniciid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bolumlertablosu" Member="bolumlertablosu">
+    <Type Name="bolumlertablosu">
+      <Column Name="projeid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="adisoyadi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ograncino" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="dersadi" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ozet" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tarih" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="anahtarkelimeler" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="danisman" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="juri" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="baslik" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>
